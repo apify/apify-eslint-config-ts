@@ -5,6 +5,13 @@
 npm install --save-dev eslint typescript @apify/eslint-config-ts @typescript-eslint/eslint-plugin @typescript-eslint/parser 
 ```
 
+### Usage with React
+
+To make use of React types such as state, children etc. install:
+```bash
+npm i --save-dev @types/react
+```
+
 ## Edit `.eslintrc`
 Add (or replace `@apify/eslint-config` package)
 
