@@ -1,12 +1,12 @@
 # Usage
 
-## Install:
-
+## Install
 ```bash
 npm install --save-dev eslint typescript @apify/eslint-config-ts @typescript-eslint/eslint-plugin @typescript-eslint/parser 
 ```
 
-## Add to `.eslintrc` file:
+## Edit `.eslintrc`
+Add (or replace `@apify/eslint-config` package)
 
 ```json
 {
@@ -25,7 +25,8 @@ When using scoped modules it is not possible to omit the eslint-config- prefix. 
 ```
 
 
-## Create `tsconfig.json` file in the root of the project and add:
+## Create `tsconfig.json`
+Create `tsconfig.json` file in the root of the project and add:
 ```
 {}
 ```
@@ -67,7 +68,8 @@ Error on unused variables
 Error on unused function params
 
 
-## Edit eslint npm script to include .ts, .tsx files and to run typescript validation
+## Edit lint npm script
+Edit lint npm script to include .ts, .tsx files and to run typescript validation
 ```json
 "eslint --ext .js,.jsx,.ts,.tsx ; tsc --noemit"
 ```
