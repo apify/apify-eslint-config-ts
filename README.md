@@ -6,7 +6,7 @@
 npm install --save-dev eslint typescript @apify/eslint-config-ts @typescript-eslint/eslint-plugin @typescript-eslint/parser 
 ```
 
-## Add `.eslintrc` file:
+## Add to `.eslintrc` file:
 
 ```json
 {
@@ -35,15 +35,10 @@ Example minimal setup (used on Web)
 ```json
 {
     "compilerOptions": {
-        // Skips typechecking of 3rd party libraries declaration files (extension .d.ts) since they may have different tsconfig
         "skipLibCheck": true,
-        // Allows eg "import React from 'react'" instead of "import * as React from 'react'"
         "esModuleInterop": true,
-        // Allows use of JSX tags
         "jsx": "preserve",
-        // Error on unused variables
         "noUnusedLocals": true,
-        // Error on unused function params
         "noUnusedParameters": true
     },
     "exclude": [
@@ -55,6 +50,22 @@ Example minimal setup (used on Web)
     ]
 }
 ```
+
+### skipLibCheck
+Skips typechecking of 3rd party libraries declaration files (extension .d.ts) since they may have different tsconfig
+
+### esModuleInterop
+Allows eg "import React from 'react'" instead of "import * as React from 'react'"
+
+### jsx
+Allows use of JSX tags
+
+### noUnusedLocals
+Error on unused variables
+
+### noUnusedParameters
+Error on unused function params
+
 
 ## Edit eslint npm script to include .ts, .tsx files and to run typescript validation
 ```json
