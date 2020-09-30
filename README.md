@@ -31,7 +31,7 @@ When using scoped modules it is not possible to omit the eslint-config- prefix. 
 ```
 List of all options https://www.typescriptlang.org/tsconfig
 
-Example minimal setup (used on Web)
+### Example minimal setup (used on Web)
 ```json
 {
     "compilerOptions": {
@@ -51,19 +51,19 @@ Example minimal setup (used on Web)
 }
 ```
 
-### skipLibCheck
+`skipLibCheck`: 
 Skips typechecking of 3rd party libraries declaration files (extension .d.ts) since they may have different tsconfig
 
-### esModuleInterop
+`esModuleInterop`: 
 Allows eg "import React from 'react'" instead of "import * as React from 'react'"
 
-### jsx
+`jsx`: 
 Allows use of JSX tags
 
-### noUnusedLocals
+`noUnusedLocals`: 
 Error on unused variables
 
-### noUnusedParameters
+`noUnusedParameters`: 
 Error on unused function params
 
 
