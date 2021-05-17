@@ -29,7 +29,10 @@ module.exports = {
                 // note you must disable the base rule as it can report incorrect errors
                 "no-shadow": "off",
                 // This rule extends the base eslint/no-shadow rule. It adds support for TypeScript's this parameters and global augmentation, and adds options for TypeScript features
-                "@typescript-eslint/no-shadow": ["error"]
+                "@typescript-eslint/no-shadow": ["error"],
+                "@typescript-eslint/no-non-null-assertion": "off",
+                "no-useless-constructor": "off",
+                "@typescript-eslint/no-useless-constructor": "error"
             }
         }
     ]
