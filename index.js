@@ -24,8 +24,6 @@ module.exports = {
                 "@typescript-eslint/no-unused-vars": ["error"],
                 // Allow semicolons at the end of the code block
                 "@typescript-eslint/no-extra-semi": "off",
-                // TypeScript doesn't support imports with `.ts` extensions, and `.js` makes the rule complain
-                "import/extensions": "off",
                 // note you must disable the base rule as it can report incorrect errors
                 "no-shadow": "off",
                 // This rule extends the base eslint/no-shadow rule. It adds support for TypeScript's this parameters and global augmentation, and adds options for TypeScript features
@@ -35,5 +33,9 @@ module.exports = {
                 "@typescript-eslint/no-useless-constructor": "error"
             }
         }
-    ]
+    ],
+    "rules": {
+        // TypeScript doesn't support imports with `.ts` extensions, and `.js` makes the rule complain
+        "import/extensions": "off",
+    }
 };
