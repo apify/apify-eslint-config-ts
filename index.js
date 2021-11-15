@@ -32,7 +32,16 @@ module.exports = {
                 "@typescript-eslint/no-shadow": ["error"],
                 "@typescript-eslint/no-non-null-assertion": "off",
                 "no-useless-constructor": "off",
-                "@typescript-eslint/no-useless-constructor": "error"
+                "@typescript-eslint/no-useless-constructor": "error",
+                "default-param-last": "off",
+                "@typescript-eslint/default-param-last": "error",
+                "lines-between-class-members": [
+                    "error",
+                    "always",
+                    {
+                        "exceptAfterSingleLine": true
+                    }
+                ],
             }
         }
     ],
