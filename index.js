@@ -35,6 +35,8 @@ module.exports = {
                 "@typescript-eslint/no-useless-constructor": "error",
                 "default-param-last": "off",
                 "@typescript-eslint/default-param-last": "error",
+                "space-before-function-paren": "off",
+                "@typescript-eslint/space-before-function-paren": "error",
                 "lines-between-class-members": [
                     "error",
                     "always",
