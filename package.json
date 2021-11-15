@@ -1,6 +1,6 @@
 {
   "name": "@apify/eslint-config-ts",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Typescript ESLint configuration shared across projects in Apify.",
   "main": "index.js",
   "scripts": {

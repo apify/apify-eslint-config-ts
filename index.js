@@ -36,7 +36,7 @@ module.exports = {
                 "default-param-last": "off",
                 "@typescript-eslint/default-param-last": "error",
                 "space-before-function-paren": "off",
-                "@typescript-eslint/space-before-function-paren": "error",
+                "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
                 "lines-between-class-members": [
                     "error",
                     "always",
