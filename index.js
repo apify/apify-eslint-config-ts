@@ -44,6 +44,7 @@ module.exports = {
                         "exceptAfterSingleLine": true
                     }
                 ],
+                "@typescript-eslint/no-floating-promises": "error",
             }
         }
     ],
