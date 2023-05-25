@@ -1,6 +1,6 @@
 {
   "name": "@apify/eslint-config-ts",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Typescript ESLint configuration shared across projects in Apify.",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,12 @@
     "prepublishOnly": "test $RUNNING_FROM_SCRIPT || (echo \"You must use publish.sh instead of 'npm publish' directly!\"; exit 1)"
   },
   "dependencies": {
-    "@apify/eslint-config": "^0.2.2",
-    "eslint-import-resolver-typescript": "^2.5.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.0",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "@apify/eslint-config": "^0.3.3",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "*",
