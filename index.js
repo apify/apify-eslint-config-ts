@@ -47,9 +47,5 @@ module.exports = {
                 "@typescript-eslint/no-floating-promises": "error",
             }
         }
-    ],
-    "rules": {
-        // TypeScript doesn't support imports with `.ts` extensions, and `.js` makes the rule complain
-        "import/extensions": "off",
-    }
+    ]
 };
