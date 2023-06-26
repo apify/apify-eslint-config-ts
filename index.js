@@ -45,6 +45,7 @@ module.exports = {
                     }
                 ],
                 "@typescript-eslint/no-floating-promises": "error",
+                "@typescript-eslint/comma-dangle": ["error", "always-multiline"],
             }
         }
     ]
