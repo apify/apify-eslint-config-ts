@@ -47,7 +47,15 @@ module.exports = {
                 "@typescript-eslint/no-floating-promises": "error",
                 "@typescript-eslint/comma-dangle": ["error", "always-multiline"],
                 "@typescript-eslint/await-thenable": "error",
-                "@typescript-eslint/no-misused-promises": "error",
+                "@typescript-eslint/no-misused-promises": [
+                    "error",
+                    {
+                        "checksVoidReturn": {
+                            "arguments": false,
+                            "attributes": false
+                        }
+                    }
+                ],
                 "@typescript-eslint/promise-function-async": "error",
             }
         }
