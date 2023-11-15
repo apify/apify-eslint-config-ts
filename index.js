@@ -4,7 +4,7 @@ module.exports = {
     ],
     "overrides": [
         {
-            "files": ["**/*.ts", "**/*.tsx"],
+            "files": ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts"],
             "extends": [
                 "@apify",
                 "plugin:@typescript-eslint/eslint-recommended",
