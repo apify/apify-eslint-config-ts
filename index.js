@@ -57,6 +57,7 @@ module.exports = {
                     }
                 ],
                 "@typescript-eslint/promise-function-async": "error",
+                "@typescript-eslint/consistent-type-imports": "error",
             }
         }
     ]
