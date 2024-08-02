@@ -4,8 +4,7 @@
   "description": "Typescript ESLint configuration shared across projects in Apify.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "test $RUNNING_FROM_SCRIPT || (echo \"You must use publish.sh instead of 'npm publish' directly!\"; exit 1)"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@apify/eslint-config": "^0.4.0",
