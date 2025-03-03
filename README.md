@@ -1,8 +1,13 @@
+# ⚠ DEPRECATION WARNING
+This repository and the corresponding package are deprecated and will no longer be maintained.
+
+Please use [apify-eslint-config](https://github.com/apify/apify-eslint-config), which includes a TypeScript configuration, and support for ESLint v9 along with the new flat config structure.
+
 # Usage
 
 ## Install
 ```bash
-npm install --save-dev eslint typescript @apify/eslint-config-ts @typescript-eslint/eslint-plugin @typescript-eslint/parser 
+npm install --save-dev eslint typescript @apify/eslint-config-ts @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 ### Usage with React
@@ -21,8 +26,8 @@ Add (or replace `@apify/eslint-config` package)
 }
 ```
 
-NOTE (from https://eslint.org/docs/developer-guide/shareable-configs): 
-  
+NOTE (from https://eslint.org/docs/developer-guide/shareable-configs):
+
 When using scoped modules it is not possible to omit the eslint-config- prefix. Doing so would result in package naming conflicts, and thus in resolution errors in most of cases. For example a package named @scope/eslint-config-myconfig vs @scope/my-config, since both are valid scoped package names, the configuration should be specified as:
 
 ```json
@@ -59,19 +64,19 @@ List of all options https://www.typescriptlang.org/tsconfig
 }
 ```
 
-`skipLibCheck`: 
+`skipLibCheck`:
 Skips typechecking of 3rd party libraries declaration files (extension .d.ts) since they may have different tsconfig
 
-`esModuleInterop`: 
+`esModuleInterop`:
 Allows eg "import React from 'react'" instead of "import * as React from 'react'"
 
-`jsx`: 
+`jsx`:
 Allows use of JSX tags
 
-`noUnusedLocals`: 
+`noUnusedLocals`:
 Error on unused variables
 
-`noUnusedParameters`: 
+`noUnusedParameters`:
 Error on unused function params
 
 
